@@ -1,0 +1,39 @@
+﻿<Page x:Class="DIDIS.Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DIDIS"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="900"
+      Title="Menu">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- שורת כפתורים גלילה -->
+        <ScrollViewer Grid.Row="0" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled">
+            <StackPanel x:Name="SubjectsPanel" Orientation="Horizontal" Margin="20,10" />
+        </ScrollViewer>
+
+        <UniformGrid x:Name="mainGrid" Rows="1" HorizontalAlignment="Right" />
+
+        <!--  האוכל -->
+        <ScrollViewer Grid.Row="1" Margin="0,0,0,15" Grid.RowSpan="3">
+            <WrapPanel x:Name="FoodPanel" Orientation="Horizontal" Margin="10"/>
+        </ScrollViewer>
+
+        <Frame x:Name="subjectFrame" Grid.Row="2" />
+
+        <Button Grid.Row="3" Content="cart"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            FontSize="40"
+            Click="Button_Click"/>
+    </Grid>
+</Page>
