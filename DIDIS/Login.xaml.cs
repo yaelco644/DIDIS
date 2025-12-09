@@ -28,6 +28,8 @@ namespace DIDIS
         public Login()
         {
             InitializeComponent();
+            //הערה 1
+            int num = 1;//stam
         }
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
