@@ -28,8 +28,9 @@ namespace DIDIS
         public Login()
         {
             InitializeComponent();
-            //הערה 1
-            int num = 1;//stam
+            //הערה git check
+            int num1 = 1;//stam1
+            int num2 = 1;//stam2
         }
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
